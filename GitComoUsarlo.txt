@@ -1,0 +1,22 @@
+git init #para un directorio nuevo
+git status -s #me muestra las filas que estoy siguiendo (los de la carpeta en ppio)
+git add funciones decoradoras.py #agrego a staging area una fila puntual
+git add . #manda todos los fila de la carpeta en status "?" a la staging area
+git commit -m "Mensaje" #paso todos las filas en staging area hacia local repo
+git log --oneline #me lista todos los commits realizados con su codigo
+git reset --hard 8c82037 #me permite volver a un estado anterior de mi fila segun codigo
+
+git remote add origin https://github.com/jadosfer/Python-3.git #copio ambas lineas desde github para 
+git push -u origin master   #(sigue de arriba) enlazar repo local con repo en github
+
+git pull #si hice un cambio en github, lo traigo a mi dir de trabajo
+git tag version1.0 -m "version 1.0" #hago una etiqueta 
+git push
+git push --tags #subo los tags
+
+git branch miRama #creo una rama de nombre "miRama" pero no me muevo
+git checkout miRama #me posiciona en la rama
+git branch #me muestra todas las ramas y pone asterisco en la que estoy
+git checkout master #vuelvo al master donde tengo que hacer el merge (fusion rama master con rama branch)
+git merge miRama #unifica todo en un nuevo punto del master
+git branch -d miRama #elimina "miRama" --agrego texto de prueba en ramaDificil
